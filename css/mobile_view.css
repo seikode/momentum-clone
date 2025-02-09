@@ -1,0 +1,126 @@
+/*모바일 가로, 세로 : -767px*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  #todo-list.mobile {
+    margin: 3% 0 0 0;
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  #clock {
+    font-size: 2rem;
+  }
+
+  #weather {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  #greeting {
+    font-size: 4rem;
+    margin: 5% 0 3% 0;
+    animation: fadeIn 0.8s linear;
+    opacity: 0.8;
+  }
+
+  #login-form input:first-child {
+    width: 10rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #login-form input:last-child {
+    width: 5rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #todo-form input {
+    margin: 5% 0;
+    width: 14rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #todo-list span {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  #todo-list.mobile {
+    margin: 3% 0 0 0;
+    width: 60%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  #clock {
+    font-size: 2rem;
+  }
+
+  #weather {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  #greeting {
+    font-size: 4rem;
+    margin: 5% 0 3% 0;
+    animation: fadeIn 0.8s linear;
+    opacity: 0.8;
+  }
+
+  #login-form input:first-child {
+    width: 10rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #login-form input:last-child {
+    width: 5rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #todo-form input {
+    margin: 5% 0;
+    width: 14rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(233, 233, 233, 0.3);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #todo-list span {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

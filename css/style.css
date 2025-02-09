@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url(reset.css);
+@import url(mobile_view.css);
+@import url(tablet_view.css);
 
 @keyframes fadeIn {
   0% {
@@ -16,6 +18,10 @@
   }
 }
 
+/*노트북 & PC : 1024px-*/
+@media only screen and (min-width: 1024px) {
+}
+
 body {
   font-family: "Oswald", serif;
 }
@@ -27,8 +33,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 3% 3% 0 3%;
-  font-size: 2rem;
 }
 
 .main {
@@ -46,52 +52,6 @@ input::placeholder {
   margin: 10%;
 }
 
-#login-form input:first-child {
-  width: 10rem;
-  height: 2rem;
-  border: 0;
-  border-radius: 15px;
-  background-color: rgba(233, 233, 233, 0.3);
-  font-size: 1rem;
-  text-align: center;
-}
-
-#login-form input:last-child {
-  width: 5rem;
-  height: 2rem;
-  border: 0;
-  border-radius: 15px;
-  background-color: rgba(233, 233, 233, 0.3);
-  color: black;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.main #greeting {
-  font-size: 5rem;
-  margin: 3% 0;
-  animation: fadeIn 0.8s linear;
-  opacity: 0.8;
-}
-
-#todo-form input {
-  margin: 5% 0;
-  width: 14rem;
-  height: 2rem;
-  border: 0;
-  border-radius: 15px;
-  background-color: rgba(233, 233, 233, 0.3);
-  font-size: 1rem;
-  text-align: center;
-}
-
-.main #todo-list {
-  margin: 5% 0;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
 #todo-list li {
   margin: 10px 0;
   display: flex;
@@ -101,7 +61,7 @@ input::placeholder {
 #todo-list button {
   padding: 0;
   margin-right: 20px;
-  font-size: 15px;
+  font-size: 1rem;
   opacity: 0.5;
   border: 0;
   border-radius: 5px;
@@ -115,14 +75,10 @@ input::placeholder {
     0 0 10px 4px rgba(25, 25, 26, 0.324);
 }
 
-#todo-list span {
-  font-size: 30px;
-}
-
 .footer {
-  width: 100%;
   font-size: 1rem;
   position: absolute;
+  margin: 0 2% 2% 2%;
   bottom: 3%;
   display: flex;
   justify-content: center;
@@ -139,5 +95,5 @@ img {
   object-fit: cover;
   opacity: 0.6;
   z-index: -1;
-  animation: fadeIn 0.8s linear;
+  animation: fadeIn 1s linear;
 }
