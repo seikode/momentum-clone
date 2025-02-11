@@ -1,14 +1,5 @@
-/*태블릿 가로, 세로 : 768px-1023px*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-  #todo-list.tablet {
-    margin: 3% 0 0 0;
-    width: 70%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-  }
-
+/* 태블릿 가로 */
+@media only screen and (768px <= width <= 1024px) and (orientation: landscape) {
   #clock {
     font-size: 3rem;
   }
@@ -19,19 +10,17 @@
   }
 
   #greeting {
-    font-size: 5rem;
-    margin: 5% 0 3% 0;
-    animation: fadeIn 0.8s linear;
-    opacity: 0.8;
+    font-size: 4rem;
+    margin: 3% 0 3% 0;
   }
 
   #login-form input:first-child {
-    width: 18rem;
+    width: 10rem;
     height: 2rem;
     border: 0;
     border-radius: 15px;
-    background-color: rgba(233, 233, 233, 0.3);
-    font-size: 2rem;
+    background-color: rgba(233, 233, 233, 0.5);
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -40,88 +29,31 @@
     height: 2rem;
     border: 0;
     border-radius: 15px;
-    background-color: rgba(233, 233, 233, 0.3);
-    color: black;
+    background-color: rgba(233, 233, 233, 0.5);
     font-size: 1rem;
     text-align: center;
   }
-
   #todo-form input {
-    margin: 5% 0;
+    margin: 1% 0;
     width: 28rem;
     height: 2rem;
     border: 0;
     border-radius: 15px;
-    background-color: rgba(233, 233, 233, 0.3);
-    font-size: 2rem;
+    background-color: rgba(233, 233, 233, 0.5);
+    font-size: 1rem;
     text-align: center;
   }
+
+  #todo-list.tablet {
+    margin: 2% 0 0 0;
+    width: 60%;
+    height: 20vh;
+    flex-direction: column;
+    overflow: auto;
+  }
+
   #todo-list span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
   }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-    #todo-list.tablet {
-      margin: 3% 0 0 0;
-      width: 70%;
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      overflow: auto;
-    }
-  
-    #clock {
-      font-size: 3rem;
-    }
-  
-    #weather {
-      font-size: 2rem;
-      text-align: right;
-    }
-  
-    #greeting {
-      font-size: 5rem;
-      margin: 5% 0 3% 0;
-      animation: fadeIn 0.8s linear;
-      opacity: 0.8;
-    }
-  
-    #login-form input:first-child {
-      width: 18rem;
-      height: 2rem;
-      border: 0;
-      border-radius: 15px;
-      background-color: rgba(233, 233, 233, 0.3);
-      font-size: 2rem;
-      text-align: center;
-    }
-  
-    #login-form input:last-child {
-      width: 5rem;
-      height: 2rem;
-      border: 0;
-      border-radius: 15px;
-      background-color: rgba(233, 233, 233, 0.3);
-      color: black;
-      font-size: 1rem;
-      text-align: center;
-    }
-  
-    #todo-form input {
-      margin: 5% 0;
-      width: 28rem;
-      height: 2rem;
-      border: 0;
-      border-radius: 15px;
-      background-color: rgba(233, 233, 233, 0.3);
-      font-size: 2rem;
-      text-align: center;
-    }
-    #todo-list span {
-      font-size: 2rem;
-      font-weight: 300;
-    }
-  }
-  
