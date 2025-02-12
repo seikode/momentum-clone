@@ -47,7 +47,7 @@
     #todo-list.pc {
       margin: 2% 0 0 0;
       width: 50%;
-      height: 30%;
+      height: 30vh;
       flex-direction: column;
       overflow: auto;
     }
