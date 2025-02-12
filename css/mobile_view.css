@@ -12,7 +12,7 @@
   #greeting {
     font-size: 3rem;
     text-align: center;
-    margin: 10% 0 5% 0;
+    margin: 5% 0 5% 0;
     animation: fadeIn 0.8s linear;
     opacity: 0.8;
   }
