@@ -47,7 +47,7 @@
   #todo-list.tablet {
     margin: 2% 0 0 0;
     width: 60%;
-    height: 20vh;
+    height: 20%;
     flex-direction: column;
     overflow: auto;
   }
