@@ -61,10 +61,11 @@
     font-weight: 300;
     height: auto;
     background-color: rgba(233, 233, 233, 0.5);
+    border-radius: 10px;
   }
 }
 
-/* 모바일 가로 , 태블릿 세로 */
+/* 모바일 가로  */
 @media only screen and (480px <= width <= 767px) and (orientation: landscape) {
   #clock {
     font-size: 2rem;
@@ -123,5 +124,6 @@
     font-weight: 300;
     height: auto;
     background-color: rgba(233, 233, 233, 0.5);
+    border-radius: 10px;
   }
 }
