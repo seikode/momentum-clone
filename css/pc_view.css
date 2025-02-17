@@ -1,5 +1,5 @@
 /* pc */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   #clock {
     font-size: 3rem;
   }
